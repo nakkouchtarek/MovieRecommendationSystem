@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+    "name": "Web Scraper Extension",
+    "version": "1.0",
+    "permissions": ["activeTab","storage"],
+    "content_scripts": [
+      {
+        "run_at": "document_end",
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
